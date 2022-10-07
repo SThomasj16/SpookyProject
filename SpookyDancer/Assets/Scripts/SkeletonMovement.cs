@@ -1,22 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SkeletonMovement : MonoBehaviour
 {
-    public Animator Animator;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public Animator animator;
+    public Transform target;
+    private static readonly int Blend = Animator.StringToHash("Blend");
     void Update()
     {
-        var xValue = Input.GetAxis("Horizontal");
-        var yValue = Input.GetAxis("Vertical");
-        Animator.SetFloat("Blend",xValue);
-        transform.position +=  Time.deltaTime * 2 *(new Vector3(xValue,yValue)); 
+        var dir = (target.position - transform.position).normalized;
+        transform.Translate(dir * Time.deltaTime);
+        animator.SetFloat(Blend,dir.x);
     }
 }
