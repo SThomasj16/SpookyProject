@@ -4,6 +4,8 @@ public class CharacterMovement : MonoBehaviour
 {
     public Animator Animator;
     private static readonly int Blend = Animator.StringToHash("Blend");
+    private static readonly int Atrack = Animator.StringToHash("Attack");
+    private bool isAttacking;
 
     void Start()
     {
@@ -14,7 +16,20 @@ public class CharacterMovement : MonoBehaviour
     {
         var xValue = Input.GetAxis("Horizontal");
         var yValue = Input.GetAxis("Vertical");
-        Animator.SetFloat(Blend,xValue);
-        transform.position +=  Time.deltaTime * 2 *(new Vector3(xValue,yValue)); 
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Animator.SetTrigger(Atrack);
+            isAttacking = true;
+        }
+        if(!isAttacking)
+        {
+            Animator.SetFloat(Blend,xValue);
+            transform.position +=  Time.deltaTime * 2 *(new Vector3(xValue,yValue));
+        }
+    }
+    public void OnAttackEnds()
+    {
+        isAttacking = false;
     }
 }
