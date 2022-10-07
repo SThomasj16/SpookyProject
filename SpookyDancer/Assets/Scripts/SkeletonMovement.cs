@@ -9,6 +9,7 @@ public class SkeletonMovement : MonoBehaviour
     {
         var dir = (target.position - transform.position).normalized;
         transform.Translate(dir * Time.deltaTime);
-        animator.SetFloat(Blend,dir.x);
+        var animationDir = Mathf.Clamp(target.position.x - transform.position.x, -1, 1);
+        animator.SetFloat(Blend,animationDir);
     }
 }
