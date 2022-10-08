@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -115,7 +115,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: warrior-idle_0
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8106e1f9b61116b41a8bd0f1a84e2cdc
+      internalID: -1781806444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9194c2b48cc8a6f4497b984232cb1132
+      internalID: -1145704134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3acb369db4ef35d4684463ff13b2c627
+      internalID: 1927663331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_3
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fdf3266026d9df478f4ee8a4078b2dd
+      internalID: -1544696618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_4
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72448bd0e5329d645ad9ef9afcad996a
+      internalID: -2078367173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_5
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e012311afbdca843a65faf0e1424116
+      internalID: -131173597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_6
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bde07350dc5413e48b23126c06c86476
+      internalID: -1585890550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_7
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b2dd0192feaaab4d903ce2f854d04d1
+      internalID: 1348416409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_8
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e77ce48327fe60844967048c0228dbd8
+      internalID: -1938341008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_9
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76e1613e2a4b17543a47507c7c78853b
+      internalID: 1574547177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_10
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d13fd276f78dfd4188494828848f04d
+      internalID: -394839110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_11
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49c5ece67663ce4a82eaaeca5c49306
+      internalID: -1925019822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_12
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 21
+        width: 49
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36494d919eeb7b468d91e1bc14583b6
+      internalID: 1246899345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_13
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 21
+        width: 49
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc2b209ef7686e419d6296ff5589d20
+      internalID: -2065856170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_14
+      rect:
+        serializedVersion: 2
+        x: 2064
+        y: 21
+        width: 49
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed613108ec770a649b9f8d636ab209b6
+      internalID: -793919429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: warrior-idle_15
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 21
+        width: 49
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d37c37797df2140a81442b27ac5a57
+      internalID: -1753655410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -126,7 +462,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      warrior-idle_3: -1544696618
+      warrior-idle_1: -1145704134
+      warrior-idle_11: -1925019822
+      warrior-idle_15: -1753655410
+      warrior-idle_13: -2065856170
+      warrior-idle_2: 1927663331
+      warrior-idle_5: -131173597
+      warrior-idle_14: -793919429
+      warrior-idle_4: -2078367173
+      warrior-idle_7: 1348416409
+      warrior-idle_0: -1781806444
+      warrior-idle_10: -394839110
+      warrior-idle_6: -1585890550
+      warrior-idle_9: 1574547177
+      warrior-idle_8: -1938341008
+      warrior-idle_12: 1246899345
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

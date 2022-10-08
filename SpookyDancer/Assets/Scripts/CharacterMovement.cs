@@ -1,15 +1,25 @@
+using System;
 using UnityEngine;
 
+[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(Animator))]
 public class CharacterMovement : MonoBehaviour
 {
-    public Animator Animator;
     public Rigidbody2D rigidbody;
     public LayerMask enemyLayer;
-    private static readonly int Blend = Animator.StringToHash("Blend");
-    private static readonly int Atrack = Animator.StringToHash("Attack");
-    private bool isAttacking;
+    private static readonly int Attack = Animator.StringToHash("Attack");
+    private Animator _animator;
+    private bool _isAttacking;
+    private SpriteRenderer _spriteRenderer;
+    private static readonly int Walk = Animator.StringToHash("Walk");
 
-    void Start()
+    private void Awake()
+    {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+        _animator = GetComponent<Animator>();
+    }
+
+    private void Start()
     {
         
     }
@@ -21,24 +31,26 @@ public class CharacterMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Animator.SetTrigger(Atrack);
-            isAttacking = true;
-
-           var _results = Physics2D.OverlapCircleAll(transform.position, 2, enemyLayer);
-            foreach (var enemy in _results)
+            _animator.SetTrigger(Attack);
+            _isAttacking = true;
+            var results = Physics2D.OverlapCircleAll(transform.position, 2, enemyLayer);
+            foreach (var enemy in results)
             {
                 if(!enemy) continue;
                 enemy.GetComponent<SkeletonMovement>().TakeDamage();
             }
         }
-        if(!isAttacking)
-        {
-            Animator.SetFloat(Blend,xValue);
-            rigidbody.velocity =  2 *(new Vector3(xValue,yValue));
-        }
+
+        if (Input.GetKeyDown(KeyCode.A)) _spriteRenderer.flipX = true;
+
+        if (Input.GetKeyDown(KeyCode.D)) _spriteRenderer.flipX = false;
+
+        if (_isAttacking) return;
+        _animator.SetFloat(Walk,  xValue + yValue);
+        rigidbody.velocity =  2 *(new Vector3(xValue, yValue));
     }
     public void OnAttackEnds()
     {
-        isAttacking = false;
+        _isAttacking = false;
     }
 }

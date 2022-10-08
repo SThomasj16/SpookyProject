@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: walk
+  m_Name: Walk
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -21,25 +21,25 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: -1998222870, guid: fbedbf0cea817c6488de18d403c085b3, type: 3}
-    - time: 0.03125
+    - time: 0.14285715
       value: {fileID: 1020085746, guid: fbedbf0cea817c6488de18d403c085b3, type: 3}
-    - time: 0.0625
+    - time: 0.2857143
       value: {fileID: -1076927293, guid: fbedbf0cea817c6488de18d403c085b3, type: 3}
-    - time: 0.09375
+    - time: 0.42857143
       value: {fileID: 291613413, guid: fbedbf0cea817c6488de18d403c085b3, type: 3}
-    - time: 0.125
+    - time: 0.5714286
       value: {fileID: -203407119, guid: fbedbf0cea817c6488de18d403c085b3, type: 3}
-    - time: 0.15625
+    - time: 0.71428573
       value: {fileID: 85572193, guid: fbedbf0cea817c6488de18d403c085b3, type: 3}
-    - time: 0.1875
+    - time: 0.85714287
       value: {fileID: -1920119459, guid: fbedbf0cea817c6488de18d403c085b3, type: 3}
-    - time: 0.21875
+    - time: 1
       value: {fileID: 1215265077, guid: fbedbf0cea817c6488de18d403c085b3, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 32
+  m_SampleRate: 7
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -67,7 +67,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 1.1428572
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

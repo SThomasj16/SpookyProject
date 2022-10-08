@@ -12344,6 +12344,10 @@ PrefabInstance:
       value: Character
       objectReference: {fileID: 0}
     - target: {fileID: 7330320193351627454, guid: 4d656679ab5f5a346a8c9ed91334a9c7, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7330320193351627454, guid: 4d656679ab5f5a346a8c9ed91334a9c7, type: 3}
       propertyPath: m_Size.x
       value: 1.6875
       objectReference: {fileID: 0}
