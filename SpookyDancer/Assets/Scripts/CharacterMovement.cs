@@ -3,6 +3,8 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     public Animator Animator;
+    public Rigidbody2D rigidbody;
+    public LayerMask enemyLayer;
     private static readonly int Blend = Animator.StringToHash("Blend");
     private static readonly int Atrack = Animator.StringToHash("Attack");
     private bool isAttacking;
@@ -21,11 +23,18 @@ public class CharacterMovement : MonoBehaviour
         {
             Animator.SetTrigger(Atrack);
             isAttacking = true;
+
+           var _results = Physics2D.OverlapCircleAll(transform.position, 2, enemyLayer);
+            foreach (var enemy in _results)
+            {
+                if(!enemy) continue;
+                enemy.GetComponent<SkeletonMovement>().TakeDamage();
+            }
         }
         if(!isAttacking)
         {
             Animator.SetFloat(Blend,xValue);
-            transform.position +=  Time.deltaTime * 2 *(new Vector3(xValue,yValue));
+            rigidbody.velocity =  2 *(new Vector3(xValue,yValue));
         }
     }
     public void OnAttackEnds()
